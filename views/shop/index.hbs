@@ -1,0 +1,20 @@
+{{# each products}}
+<div class="row">
+    {{# each this}}
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img class="image-responsive" src="{{ this.image_url }}" alt="...">
+            <div class="caption">
+                <h3>{{ this.title }}</h3>
+                <p class="description">{{ this.description }}</p>
+                <div class="clearfix">
+                    <div class="price pull-left">$ {{ this.brand_id }}</div>
+                    </br>
+                    <a href="#" class="btn btn-primary pull-left" role="button">Quick View</a> <a href="#" class="btn btn-success pull-right" role="button">Add To Cart</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  {{/each}}
+</div>
+{{/each}}
